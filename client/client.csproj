@@ -227,9 +227,8 @@ tar -c -a -f ..\..\files/runtime_x64.zip -C ..\..\files\runtime_x64 *
 tar -c -a -f ..\..\files/runtime_x86.zip -C ..\..\files\runtime_x86 *</PreBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
-    <PostBuildEvent>del /F ..\..\files\content.zip
-del /F ..\..\files\runtime_x64.zip
-del /F ..\..\files\runtime_x86.zip</PostBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
